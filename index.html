@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medicare Part D Penalty Calculator</title>
+    <title>Part D Penalty Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
+        <h1>Part D Late Enrollment Penalty Calculator</h1>
+
         <div class="content">
             <div class="explanation">
-                <h1 class="title-h1">Part D Late Enrollment Penalty Explained</h1>
                 <p>
                     The Medicare Part D late enrollment penalty is incurred if you go 63 days or more without prescription drug coverage once your Initial Enrollment Period ends. The penalty is calculated by multiplying 1% of the national base beneficiary premium by the number of uncovered months. This penalty will be added to your monthly Part D premium for as long as you have Part D.
                 </p>
             </div>
             <div class="calculator">
-                <h1>Part D Late Enrollment Penalty Calculator</h1>
                 <div class="part">
-                    <label class="months" for="partD-months">Full Uncovered Months:</label>
-                    <input class="number" type="number" id="partD-months" placeholder="Enter months">
+                    <br>
+                    <label class="months" for="partD-months">Enter number of months you went without coverage:</label>
+                    <input class="number" type="number" id="partD-months">
 
                     <div class="button-group">
                         <button class="calculate" onclick="calculatePartD()">Calculate</button>
@@ -30,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <p>*Please note that these numbers are for the current year</p>
+        <p>*Please note that this estimate is for the current year.</p>
     </div>
     <script src="part-d.js"></script>
 </body>
